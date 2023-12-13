@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="login.html">
+        <h2>Register</h2>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required autofocus />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <input
+          type="text"
+          name="address"
+          id="address"
+          placeholder="Type here your address"
+          autocomplete="street-address"
+        />
+
+        <br />
+
+        <fieldset>
+          <legend>Choose your gender</legend>
+          <input type="radio" name="gender" value="male" id="male" />
+          <label for="male">Male</label>
+
+          <input
+            type="radio"
+            checked
+            name="gender"
+            value="female"
+            id="female"
+          />
+          <label for="female">Female</label>
+        </fieldset>
+        <br />
+
+        <label for="regions">Choose a region:</label>
+        <select id="regions" name="regions">
+          <option value="mogadishu">Mogadishu</option>
+          <option value="hiraan">Hiraan</option>
+          <option value="galguduud">Galguduud</option>
+          <option value="jubaland">Jubaland</option>
+          <option value="puntland">Puntland</option>
+          <option value="somaliland">Somaliland</option>
+          <!-- Add more regions as needed -->
+        </select>
+        <br />
+        <div>
+          <input type="checkbox" checked name="terms" id="terms" />
+          <label for="terms">Agree to terms and condition</label>
+        </div>
+        <button type="submit">Register</button>
+        <p class="login">
+          Already have an account? <a href="index.html">Login</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
